@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react';
 import { Button } from './ui/button';
-import heroImage from 'figma:asset/e4e545e7bde463761b2f3434c4474cef82477897.png';
+import heroImage from '../../assets/hero-top.png';
 
 export function Hero() {
   const scrollToForm = () => {
