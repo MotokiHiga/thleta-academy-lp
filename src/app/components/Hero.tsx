@@ -19,11 +19,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#009739]/80 via-[#002776]/70 to-black/80"></div>
       </div>
 
-      {/* Brazilian Flag Accent */}
-      <div className="absolute top-0 right-0 w-64 h-64 opacity-20">
-        <div className="absolute inset-0 bg-[#009739] clip-path-diamond"></div>
-        <div className="absolute inset-0 bg-[#FEDD00] clip-path-circle transform scale-50"></div>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white">
