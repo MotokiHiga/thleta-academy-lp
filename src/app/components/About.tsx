@@ -29,7 +29,7 @@ export function About() {
           {/* Solution Section */}
           <div className="text-center mb-12">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#009739] to-[#002776] text-white rounded-full text-lg font-semibold mb-6">
-              ブラジリアンサッカースクールなら解決できます！
+              アスレタアカデミーなら解決できます！
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
               世界標準のブラジル式メソッドで、<br />
