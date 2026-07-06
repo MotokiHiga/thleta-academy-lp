@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'ATHLETA ACADEMY <onboarding@resend.dev>',
+      from: 'ATHLETA ACADEMY <info@athleta-academy-okinawa.com>',
       to: [
         'brazilian.soccer.club@gmail.com',
         'renyan.h0530@gmail.com',
