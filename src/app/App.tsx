@@ -7,10 +7,12 @@ import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { ApplicationForm } from './components/ApplicationForm';
 import { Footer } from './components/Footer';
+import SummerCampPopup from './components/SummerCampPopup';
 
 export default function App() {
   return (
     <div className="min-h-screen">
+    <SummerCampPopup />
       <Hero />
       <About />
       <CoachProfile />
