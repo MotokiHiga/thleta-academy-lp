@@ -19,32 +19,45 @@ export function ApplicationForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Form validation
     if (!formData.parentName || !formData.childName || !formData.email || !formData.phone || !formData.program) {
       toast.error('必須項目を全て入力してください');
       return;
     }
 
-    // Simulate form submission
-    setSubmitted(true);
-    toast.success('お申し込みありがとうございます！担当者から2営業日以内にご連絡いたします。');
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setFormData({
-        parentName: '',
-        childName: '',
-        childAge: '',
-        email: '',
-        phone: '',
-        program: '',
-        message: ''
+    try {
+      const response = await fetch('/api/send-inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      setSubmitted(false);
-    }, 3000);
+
+      if (response.ok) {
+        setSubmitted(true);
+        toast.success('お申し込みありがとうございます！担当者から2営業日以内にご連絡いたします。');
+
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setFormData({
+            parentName: '',
+            childName: '',
+            childAge: '',
+            email: '',
+            phone: '',
+            program: '',
+            message: ''
+          });
+          setSubmitted(false);
+        }, 3000);
+      } else {
+        toast.error('送信に失敗しました。時間をおいて再度お試しください');
+      }
+    } catch (error) {
+      toast.error('送信に失敗しました。時間をおいて再度お試しください');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
