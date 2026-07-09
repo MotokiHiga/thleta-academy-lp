@@ -193,3 +193,44 @@ moto.higa@gmail.com
 - サマーキャンプ以外の季節イベント告知ポップアップの汎用化（複数イベントの出し分け）
 - Vercel Hobbyプランの商用利用規約リスクへの対応（Proプランへの切り替え検討）
 - GA4での無料体験申込フォーム送信をコンバージョンイベントとして設定
+
+---
+
+## 10. 多言語対応(JP/EN)実装ログ
+
+### 10-1. 試行錯誤の経緯
+
+**第一段階: Google翻訳ウィジェット(不採用)**
+- `index.html`にGoogle翻訳の埋め込みウィジェットを追加し、JP/ENボタンでの切替を実装
+- **重大な問題が判明**: Chromeの「サードパーティCookieブロック」機能により、シークレットモードや一部ユーザー環境で機能しなくなることが発覚(Google翻訳は`translate.google.com`という別ドメインのCookieに依存する仕組みのため)
+- ブラウザのプライバシー保護強化の流れにより、今後さらに多くのユーザーに影響が出る可能性があると判断し、**この方式は廃止**
+
+**第二段階: react-i18nextによる本格実装(採用・現行)**
+- `react-i18next` + `i18next`を導入し、言語設定は`localStorage`に保存(ブラウザのCookie設定に依存しない)
+- 対象8コンポーネント(Hero, About, CoachProfile, Programs, Testimonials, FAQ, ApplicationForm, Footer)の日本語テキストを`src/i18n/locales/ja.json`・`en.json`に分離
+- 太字・改行・色付きスパンなどの埋め込み書式は`Trans`コンポーネントで維持
+- 画面右上に独自デザインのJP/ENボタン(`LanguageSwitcher`コンポーネント)を新規実装
+- `index.html`からGoogle翻訳関連のコードは完全削除(gtagは維持)
+
+### 10-2. 実装にはClaude Codeを使用
+
+ブラウザUI編集では、複数ファイルを横断する実装(8コンポーネント+辞書ファイル+切替コンポーネント)は非効率だったため、**Claude Code(ターミナル版)を導入して一括実装**。
+
+**事前準備で必要だったこと**:
+- ターミナルで`claude`コマンドを起動し、`/login`でAnthropicアカウント認証
+- パッケージ管理ツール`pnpm`が未インストールだったため、`npm install -g pnpm`で導入
+- GitHubへのpush時に認証エラーが発生したため、`brew install gh`→`gh auth login`でGitHub CLIの認証を実施
+
+### 10-3. つまずいたポイントと解決
+
+| 症状 | 原因 | 解決策 |
+|---|---|---|
+| Google翻訳のEN/JP切替ボタンが反応しない | Chromeのサードパーティ Cookieブロック(シークレットモードで顕著) | Google翻訳方式自体を廃止し、react-i18nextに移行 |
+| `git push`が認証エラーで止まる | ローカルにGitHub認証情報(トークン/SSH鍵)が未設定 | `gh auth login`でブラウザ経由のログインを実施 |
+| Vercelのビルドが`ERR_PNPM_LOCKFILE_CONFIG_MISMATCH`で失敗 | `package.json`の`pnpm.overrides`が新しいpnpmバージョンでは非推奨になり、`pnpm-lock.yaml`との整合性が崩れていた | `overrides`設定を`pnpm-workspace.yaml`側に移設し、ロックファイルを再生成 |
+| ローカルのpnpmバージョンとVercel側のバージョン推定が異なっていた | Vercelがプロジェクト作成日から自動でpnpmバージョンを推定する仕様 | `package.json`に`packageManager`フィールドを追加し、バージョンを明示的に固定 |
+
+### 10-4. 今後の運用メモ
+
+- 今後テキストを変更する際は、`src/app/components/`内のJSXだけでなく、**`src/i18n/locales/ja.json`と`en.json`の両方を更新する必要がある**(片方だけ直すと日英で表示がズレる)
+- Claude Codeは一度セットアップが完了しているため、次回以降の大きめの改修(複数ファイルにまたがる変更)は、GitHubブラウザUIではなくClaude Codeに依頼した方が効率的
