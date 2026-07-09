@@ -1,0 +1,292 @@
+{
+  "common": {
+    "ctaFreeTrial": "Book a Free Trial Lesson",
+    "brazilBadge": "🇧🇷 Bringing Brazil's \"Authentic Soccer\" from Okinawa to Japan"
+  },
+  "hero": {
+    "subtitle": "Using a world-class Brazilian method, we raise children \ninto people who can compete on the world stage with confidence",
+    "viewProgramsButton": "View Programs"
+  },
+  "about": {
+    "problemTitle": "Do You Have <1>Concerns</1> Like These?",
+    "worry1": "I want to get better, but I don't know how to practice",
+    "worry2": "I never get picked as a starter on my team",
+    "worry3": "I want to properly learn the fundamentals",
+    "solutionBadge": "Athleta Academy Can Solve That!",
+    "solutionText": "With a world-class Brazilian method,\nwe train technique, tactics, mentality, and discipline as one.",
+    "features": {
+      "individual": {
+        "title": "One-on-One Coaching",
+        "description": "Careful coaching tailored to each individual"
+      },
+      "growth": {
+        "title": "Real, Steady Growth",
+        "description": "Steady improvement through the Brazilian method"
+      },
+      "proCoaching": {
+        "title": "Coaching by Pros",
+        "description": "Genuine coaching from former professional players"
+      },
+      "enjoy": {
+        "title": "Learn While Having Fun",
+        "description": "Nurturing a true love of soccer"
+      }
+    }
+  },
+  "coachProfile": {
+    "title": "Coach Profile",
+    "yearsExperience": "Years of Coaching Experience",
+    "nameMain": "Roberto Iwashita",
+    "nameSub": "岩下ロベルト",
+    "role": "Founder & Head Coach, Brazilian Soccer Club",
+    "quoteMain": "\"I want to raise children into truly strong players.\"",
+    "quoteSub": "— That single phrase is where it all began.",
+    "bio1": "A soccer coach born in São Paulo, Brazil. From his teenage years he built a genuine playing career, turning out for <1>Vasco da Gama (Brazil)</1> and <2>Tokyo Gas FC, the predecessor of FC Tokyo</2>, and after retiring he poured that entire experience into coaching.",
+    "bio2": "In 2008, he founded <1>Brazilian Soccer Club</1> in Okinawa. For more than 17 years since, he has continued putting Brazilian-style development methods into practice in Japan.",
+    "achievementsTitle": "<1>Proven by Results —</1> The Power of Our Coaching",
+    "achievementsText": "More than <1>60 players</1> have grown under Coach Roberto's guidance,<2/>and many have gone on to reach even higher stages.",
+    "achievements": {
+      "beachSoccer": {
+        "title": "🇯🇵 Beach Soccer",
+        "description": "Players selected for the Japan national team"
+      },
+      "overseasClub": {
+        "title": "🌏 Overseas Pro Clubs",
+        "description": "Advancement to professional clubs abroad"
+      },
+      "overseasUniversity": {
+        "title": "🎓 Overseas Universities",
+        "description": "Enrollment via soccer scholarships"
+      },
+      "topTeam": {
+        "title": "⚽ Top Teams",
+        "description": "Promotion to leading academies at home and abroad"
+      }
+    },
+    "philosophyQuote": "Not just <1>soccer to win</1>, but <2>soccer that enriches a player's life</2> — that's what we teach.<3/>That's the Brazilian Soccer Club style.",
+    "licensesTitle": "World-Class <1>Coaching Licenses</1>",
+    "licenses": {
+      "cbfB": { "year": "2021", "title": "CBF (Brazilian Football Confederation) Class B License" },
+      "cbfAcademy": { "year": "2020", "title": "Completed CBF Academy Course" },
+      "fifaBeach": { "year": "2015", "title": "Completed FIFA Beach Soccer Coaching Course" },
+      "saoPauloCert": { "year": "Since 2008", "title": "Certified Coach, State of São Paulo (SITREFESP)" },
+      "cbfA": { "year": "2026", "title": "CBF Class A License (Expected)" }
+    },
+    "licensesFooter": "Holding official federation licenses from Brazil, he continually\nupdates his knowledge and skills to a world-class standard.",
+    "philosophyTitle": "Coaching Philosophy",
+    "philosophyMotto": "\"Creating Players for Great Success\"",
+    "philosophyMottoTranslation": "— Developing players who achieve great success.",
+    "philosophyText": "<1>Technique, tactics, mentality, and discipline.</1><2/>Through the \"Brazilian Method,\" which trains these four elements as one,<3/>we raise children into people who can compete on the world stage with confidence.",
+    "messageTitle": "A Message from Coach Roberto",
+    "messageText": "\"Soccer isn't just a sport for getting better at kicking a ball. I want to create a place where kids can seriously learn, right there on the pitch, the strength to trust their teammates, to face challenges head-on, and to never give up. I want to bring everything I learned in Brazil, from here in Okinawa, to the children of Japan.\""
+  },
+  "programs": {
+    "sectionTitle": "Our Programs",
+    "sectionSubtitle": "Classes to fit every age and level",
+    "ageLabel": "Ages:",
+    "frequencyLabel": "Frequency:",
+    "featuresLabel": "Features",
+    "recommendedBadge": "Most Popular",
+    "items": {
+      "elementary": {
+        "name": "Elementary",
+        "subtitle": "Elementary School Class",
+        "description": "Build a solid technical foundation and develop play that comes through in real matches.",
+        "age": "Grades 1–6 (Elementary School)",
+        "frequency": "1x/week (¥6,500 - ¥7,000) / 2x/week (¥9,000 - ¥10,000)",
+        "price": "¥6,500 - ¥10,000",
+        "features": [
+          "Brazilian-style fundamental technique",
+          "Tactical understanding and positioning",
+          "Match-style training",
+          "Regular skill assessments"
+        ]
+      },
+      "middle-high": {
+        "name": "Middle / High",
+        "subtitle": "Junior High & High School Class",
+        "description": "A hands-on training program for players aiming for the next level.",
+        "age": "Junior High & High School Students",
+        "frequency": "1x/week (¥8,000 - ¥9,000) / 2x/week (¥10,000 - ¥12,000)",
+        "price": "¥8,000 - ¥12,000",
+        "features": [
+          "Pro-level technical coaching",
+          "Tactical analysis and game understanding",
+          "Physical conditioning program",
+          "Career path consultation & support"
+        ]
+      }
+    },
+    "pricingTitle": "Pricing",
+    "initialFeesTitle": "Initial Fees",
+    "fees": {
+      "enrollment": "Enrollment Fee",
+      "annual": "Annual Fee",
+      "insurance": "Insurance",
+      "uniform": "Uniform Kit"
+    },
+    "optionsTitle": "Options & Discounts",
+    "siblingDiscountTitle": "🎉 Sibling Discount",
+    "siblingDiscountItem1": "2nd child: <1>10% OFF</1>",
+    "siblingDiscountItem2": "3rd child: <1>20% OFF</1>",
+    "freeTrialTitle": "✨ Free Trial",
+    "freeTrialText": "The first trial lesson is <1>completely free</1>",
+    "transferTitle": "🔄 Makeup Lessons",
+    "transferText": "Makeup lessons available in case of bad weather or events",
+    "footnote": "* All prices shown include tax\n* Detailed pricing plans will be explained during your free trial lesson"
+  },
+  "testimonials": {
+    "sectionTitle": "Results & Voices of Our Graduates",
+    "sectionSubtitle": "Over 60 children have grown here and gone on to spread their wings around the world",
+    "stats": {
+      "graduates": { "number": "60+", "label": "Graduates" },
+      "experience": { "number": "17 Years", "label": "Coaching Experience" },
+      "national": { "number": "5", "label": "National Team & Pro Players Produced" },
+      "satisfaction": { "number": "98%", "label": "Parent Satisfaction" }
+    },
+    "achievementsTitle": "🏆 Notable Achievements",
+    "achievements": {
+      "beachSoccer": {
+        "title": "Japan National Beach Soccer Team",
+        "description": "Multiple players active for Japan at international tournaments"
+      },
+      "overseasClub": {
+        "title": "Advancement to Overseas Pro Clubs",
+        "description": "Players active at professional clubs in Europe and South America"
+      },
+      "overseasUniversity": {
+        "title": "Overseas University Soccer Scholarships",
+        "description": "Enrolled at universities in the US and Europe on soccer scholarships"
+      },
+      "topTeam": {
+        "title": "Promotion to Top Academies",
+        "description": "Advancing to elite academies and top teams in Japan and abroad"
+      }
+    },
+    "items": {
+      "1": {
+        "age": "Parent of a 6th grader",
+        "text": "It's been a year since joining, and my son's play has improved dramatically. The Brazilian-style coaching makes learning technique fun, so he looks forward to his lesson every week."
+      },
+      "2": {
+        "age": "Parent of an 8th grader",
+        "text": "Between trips like the tour to Thailand, he's gained valuable experiences that go far beyond just soccer. He now dreams of playing overseas someday. Thanks to Coach Roberto's guidance, he's grown not only technically but mentally too."
+      }
+    }
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtitle": "Answers to the questions we hear most often from families",
+    "items": {
+      "faq1": {
+        "question": "Can beginners join?",
+        "answer": "Absolutely! Our Preschool and Elementary classes are designed for beginners, with careful coaching that starts from the basics. Children who are completely new to soccer are welcome to join with confidence."
+      },
+      "faq2": {
+        "question": "Is the trial lesson free?",
+        "answer": "Your first trial lesson is completely free. You'll take part in an actual lesson and get a feel for our Brazilian-style coaching and the overall atmosphere. We accept trial lesson requests at any time, so feel free to apply."
+      },
+      "faq3": {
+        "question": "What is the Brazilian method?",
+        "answer": "The Brazilian method is a coaching approach that trains technique, tactics, mentality, and discipline together as one. Beyond simply acquiring skills, it's designed to help players grow as people through soccer and become athletes who can compete on the world stage with confidence."
+      },
+      "faq4": {
+        "question": "Is there a sibling discount?",
+        "answer": "Yes, we offer a sibling discount: 10% off for a second child and 20% off for a third. We've set up these rates so families can enjoy soccer together at a great value."
+      },
+      "faq5": {
+        "question": "What happens to lessons in the rain?",
+        "answer": "In severe weather, safety comes first and a lesson may be cancelled. In that case, our makeup lesson system lets you attend a session on a different date. We'll let you know the available makeup dates in advance."
+      },
+      "faq6": {
+        "question": "What do we need to bring when joining?",
+        "answer": "Please bring clothes you can move in, soccer shoes (cleats or training shoes), a drink, and a towel. A uniform kit (¥8,000) is purchased at the time of enrollment. Soccer balls can also be borrowed from the school."
+      },
+      "faq7": {
+        "question": "Can we join partway through the month?",
+        "answer": "Yes, you can join at any time. If you enroll partway through the month, we'll prorate the fee accordingly, so there's nothing to worry about."
+      },
+      "faq8": {
+        "question": "Do you offer career path consultation or support?",
+        "answer": "Yes, especially in the Middle/High class, we provide career path consultation and support. We offer advice tailored to each player's goals, whether that's an overseas pro club, an overseas university soccer scholarship, or a top domestic team."
+      },
+      "faq9": {
+        "question": "Can parents come and watch?",
+        "answer": "Yes, we warmly welcome parents to come watch. You can see your child's progress up close. We also hold regular parent meetings to share updates on your child's growth and any challenges."
+      },
+      "faq10": {
+        "question": "What kind of track record do you have?",
+        "answer": "We have over 17 years of coaching experience and have produced more than 60 graduates. Among them are players who have represented Japan in beach soccer, joined professional clubs overseas, and enrolled in universities abroad on soccer scholarships — many are excelling at a high level."
+      }
+    }
+  },
+  "applicationForm": {
+    "title": "Apply for a Free Trial",
+    "subtitle": "Start with a free trial lesson and \nexperience the Brazilian method for yourself",
+    "freeTrialBadge": "✨ Your First Trial Lesson Is Completely Free!",
+    "submittedTitle": "Application Received!",
+    "submittedText": "A staff member will contact you within 2 business days",
+    "labels": {
+      "parentName": "Parent's Name",
+      "childName": "Child's Name",
+      "childAge": "Child's Age / Grade",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "program": "Preferred Class",
+      "message": "Questions or Requests"
+    },
+    "placeholders": {
+      "parentName": "Taro Yamada",
+      "childName": "Hanako Yamada",
+      "childAge": "e.g., 5 years old / Grade 3 / 1st year of junior high",
+      "message": "Please enter any questions or requests you may have"
+    },
+    "options": {
+      "placeholder": "Please select",
+      "preschool": "Preschool (Pre-Elementary Class)",
+      "elementary": "Elementary (Elementary School Class)",
+      "middleHigh": "Middle/High (Junior High & High School Class)"
+    },
+    "feeInfoTitle": "💰 About Initial Fees",
+    "fees": {
+      "enrollment": "Enrollment Fee: ¥6,000",
+      "annual": "Annual Fee: ¥5,500",
+      "insurance": "Insurance: ¥1,500",
+      "uniform": "Uniform: ¥8,000",
+      "siblingDiscount": "🎉 Sibling Discount: 2nd child -10% / 3rd child -20%"
+    },
+    "footnote": "* A staff member will contact you within 2 business days\n* Your personal information is handled responsibly and will never be shared with third parties",
+    "toast": {
+      "required": "Please fill in all required fields",
+      "success": "Thank you for your application! A staff member will contact you within 2 business days.",
+      "error": "The submission failed. Please wait a moment and try again"
+    }
+  },
+  "footer": {
+    "subtitle": "Athleta Academy Okinawa",
+    "aboutText": "Bringing Brazil's \"authentic soccer\" from Okinawa to Japan.\nUsing a world-class Brazilian method, we help children unlock their full potential.",
+    "quickLinksTitle": "Quick Links",
+    "links": {
+      "about": "About the School",
+      "programs": "Programs",
+      "applicationForm": "Free Trial Application",
+      "coach": "Meet the Coach",
+      "access": "Access"
+    },
+    "contactTitle": "Contact Us",
+    "snsText": "Follow us on social media",
+    "stats": {
+      "experienceNumber": "17+ Years",
+      "experienceLabel": "Coaching Experience",
+      "graduatesNumber": "60+",
+      "graduatesLabel": "Graduates",
+      "nationalNumber": "5",
+      "nationalLabel": "National Team & Pro Players Produced",
+      "satisfactionNumber": "98%",
+      "satisfactionLabel": "Parent Satisfaction"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "founderLine": "Founder: Roberto Iwashita (岩下ロベルト) | Naha, Okinawa, Japan"
+  }
+}

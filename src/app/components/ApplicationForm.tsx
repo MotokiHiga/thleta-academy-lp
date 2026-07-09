@@ -1,12 +1,16 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { toast } from 'sonner';
 import { CheckCircle2 } from 'lucide-react';
+import { withLineBreaks } from '../lib/withLineBreaks';
 
 export function ApplicationForm() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     parentName: '',
     childName: '',
@@ -24,7 +28,7 @@ export function ApplicationForm() {
 
     // Form validation
     if (!formData.parentName || !formData.childName || !formData.email || !formData.phone || !formData.program) {
-      toast.error('必須項目を全て入力してください');
+      toast.error(t('applicationForm.toast.required'));
       return;
     }
 
@@ -46,7 +50,7 @@ export function ApplicationForm() {
           });
         }
 
-        toast.success('お申し込みありがとうございます！担当者から2営業日以内にご連絡いたします。');
+        toast.success(t('applicationForm.toast.success'));
 
         // Reset form after 3 seconds
         setTimeout(() => {
@@ -62,10 +66,10 @@ export function ApplicationForm() {
           setSubmitted(false);
         }, 3000);
       } else {
-        toast.error('送信に失敗しました。時間をおいて再度お試しください');
+        toast.error(t('applicationForm.toast.error'));
       }
     } catch (error) {
-      toast.error('送信に失敗しました。時間をおいて再度お試しください');
+      toast.error(t('applicationForm.toast.error'));
     }
   };
 
@@ -85,14 +89,13 @@ export function ApplicationForm() {
               <span className="text-6xl">🇧🇷</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              無料体験申し込み
+              {t('applicationForm.title')}
             </h2>
             <p className="text-xl opacity-90">
-              まずは無料体験レッスンで、<br className="md:hidden" />
-              ブラジル式メソッドを体感してください
+              {withLineBreaks(t('applicationForm.subtitle'), 'md:hidden')}
             </p>
             <div className="mt-6 inline-block bg-[#FEDD00] text-[#002776] px-6 py-2 rounded-full font-semibold">
-              ✨ 初回体験レッスン完全無料！
+              {t('applicationForm.freeTrialBadge')}
             </div>
           </div>
 
@@ -100,9 +103,9 @@ export function ApplicationForm() {
             {submitted ? (
               <div className="text-center py-12">
                 <CheckCircle2 className="w-20 h-20 text-[#009739] mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-2 text-[#002776]">お申し込み完了！</h3>
+                <h3 className="text-2xl font-bold mb-2 text-[#002776]">{t('applicationForm.submittedTitle')}</h3>
                 <p className="text-gray-600">
-                  担当者から2営業日以内にご連絡いたします
+                  {t('applicationForm.submittedText')}
                 </p>
               </div>
             ) : (
@@ -110,14 +113,14 @@ export function ApplicationForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="parentName" className="text-base mb-2 block">
-                      保護者氏名 <span className="text-red-500">*</span>
+                      {t('applicationForm.labels.parentName')} <span className="text-red-500">*</span>
                     </Label>
                     <Input
                       id="parentName"
                       name="parentName"
                       value={formData.parentName}
                       onChange={handleChange}
-                      placeholder="山田 太郎"
+                      placeholder={t('applicationForm.placeholders.parentName')}
                       required
                       className="h-12 border-2 focus:border-[#009739]"
                     />
@@ -125,14 +128,14 @@ export function ApplicationForm() {
 
                   <div>
                     <Label htmlFor="childName" className="text-base mb-2 block">
-                      お子様氏名 <span className="text-red-500">*</span>
+                      {t('applicationForm.labels.childName')} <span className="text-red-500">*</span>
                     </Label>
                     <Input
                       id="childName"
                       name="childName"
                       value={formData.childName}
                       onChange={handleChange}
-                      placeholder="山田 花子"
+                      placeholder={t('applicationForm.placeholders.childName')}
                       required
                       className="h-12 border-2 focus:border-[#009739]"
                     />
@@ -141,14 +144,14 @@ export function ApplicationForm() {
 
                 <div>
                   <Label htmlFor="childAge" className="text-base mb-2 block">
-                    お子様の年齢・学年
+                    {t('applicationForm.labels.childAge')}
                   </Label>
                   <Input
                     id="childAge"
                     name="childAge"
                     value={formData.childAge}
                     onChange={handleChange}
-                    placeholder="例：5歳 / 小学3年生 / 中学1年生"
+                    placeholder={t('applicationForm.placeholders.childAge')}
                     className="h-12 border-2 focus:border-[#009739]"
                   />
                 </div>
@@ -156,7 +159,7 @@ export function ApplicationForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="email" className="text-base mb-2 block">
-                      メールアドレス <span className="text-red-500">*</span>
+                      {t('applicationForm.labels.email')} <span className="text-red-500">*</span>
                     </Label>
                     <Input
                       id="email"
@@ -172,7 +175,7 @@ export function ApplicationForm() {
 
                   <div>
                     <Label htmlFor="phone" className="text-base mb-2 block">
-                      電話番号 <span className="text-red-500">*</span>
+                      {t('applicationForm.labels.phone')} <span className="text-red-500">*</span>
                     </Label>
                     <Input
                       id="phone"
@@ -189,7 +192,7 @@ export function ApplicationForm() {
 
                 <div>
                   <Label htmlFor="program" className="text-base mb-2 block">
-                    希望クラス <span className="text-red-500">*</span>
+                    {t('applicationForm.labels.program')} <span className="text-red-500">*</span>
                   </Label>
                   <select
                     id="program"
@@ -199,50 +202,49 @@ export function ApplicationForm() {
                     required
                     className="w-full h-12 px-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#009739] focus:border-[#009739]"
                   >
-                    <option value="">選択してください</option>
-                    <option value="preschool">Preschool（未就学児クラス）</option>
-                    <option value="elementary">Elementary（小学生クラス）</option>
-                    <option value="middle-high">Middle/High（中学生・高校生クラス）</option>
+                    <option value="">{t('applicationForm.options.placeholder')}</option>
+                    <option value="preschool">{t('applicationForm.options.preschool')}</option>
+                    <option value="elementary">{t('applicationForm.options.elementary')}</option>
+                    <option value="middle-high">{t('applicationForm.options.middleHigh')}</option>
                   </select>
                 </div>
 
                 <div>
                   <Label htmlFor="message" className="text-base mb-2 block">
-                    ご質問・ご要望
+                    {t('applicationForm.labels.message')}
                   </Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="ご質問やご要望があればご記入ください"
+                    placeholder={t('applicationForm.placeholders.message')}
                     rows={4}
                     className="resize-none border-2 focus:border-[#009739]"
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   size="lg"
                   className="w-full bg-[#FEDD00] hover:bg-[#FEDD00]/90 text-[#002776] text-lg py-6 font-bold"
                 >
-                  無料体験を申し込む
+                  {t('common.ctaFreeTrial')}
                 </Button>
 
                 <div className="bg-gradient-to-r from-[#009739]/10 to-[#002776]/10 rounded-xl p-6 border-l-4 border-[#FEDD00]">
-                  <h4 className="font-semibold text-[#002776] mb-3">💰 初期費用について</h4>
+                  <h4 className="font-semibold text-[#002776] mb-3">{t('applicationForm.feeInfoTitle')}</h4>
                   <ul className="text-sm text-gray-700 space-y-2">
-                    <li>• 入会金：¥6,000</li>
-                    <li>• 年会費：¥5,500</li>
-                    <li>• 保険：¥1,500</li>
-                    <li>• ユニフォーム：¥8,000</li>
-                    <li className="pt-2 font-semibold text-[#009739]">🎉 兄弟割引：2人目-10% / 3人目-20%</li>
+                    <li>• {t('applicationForm.fees.enrollment')}</li>
+                    <li>• {t('applicationForm.fees.annual')}</li>
+                    <li>• {t('applicationForm.fees.insurance')}</li>
+                    <li>• {t('applicationForm.fees.uniform')}</li>
+                    <li className="pt-2 font-semibold text-[#009739]">{t('applicationForm.fees.siblingDiscount')}</li>
                   </ul>
                 </div>
 
                 <p className="text-sm text-gray-500 text-center">
-                  ※ 担当者から2営業日以内にご連絡いたします<br />
-                  ※ お客様の個人情報は適切に管理し、第三者に開示することはありません
+                  {withLineBreaks(t('applicationForm.footnote'))}
                 </p>
               </form>
             )}

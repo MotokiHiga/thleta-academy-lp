@@ -1,0 +1,292 @@
+{
+  "common": {
+    "ctaFreeTrial": "無料体験を申し込む",
+    "brazilBadge": "🇧🇷 ブラジルが生んだ「本物のサッカー」を、沖縄から日本へ"
+  },
+  "hero": {
+    "subtitle": "世界標準のブラジル式メソッドで、子どもたちを\n自信を持って世界で戦える人間へと育てます",
+    "viewProgramsButton": "プログラムを見る"
+  },
+  "about": {
+    "problemTitle": "このような<1>お悩み</1>はありませんか？",
+    "worry1": "もっと上手くなりたいけど、どう練習していいかわからない",
+    "worry2": "チームでレギュラーに選ばれない",
+    "worry3": "基礎技術をしっかり学びたい",
+    "solutionBadge": "アスレタアカデミーなら解決できます！",
+    "solutionText": "世界標準のブラジル式メソッドで、\n技術・戦術・メンタル・規律を一体的に鍛えます。",
+    "features": {
+      "individual": {
+        "title": "個別指導",
+        "description": "一人ひとりに合わせた丁寧な指導"
+      },
+      "growth": {
+        "title": "確実な成長",
+        "description": "ブラジル式メソッドによる着実な上達"
+      },
+      "proCoaching": {
+        "title": "プロの指導",
+        "description": "元プロ選手による本格指導"
+      },
+      "enjoy": {
+        "title": "楽しく学ぶ",
+        "description": "サッカーを愛する心を育てる"
+      }
+    }
+  },
+  "coachProfile": {
+    "title": "指導者プロフィール",
+    "yearsExperience": "年の指導経験",
+    "nameMain": "岩下ロベルト",
+    "nameSub": "Roberto Iwashita",
+    "role": "Brazilian Soccer Club 創設者 / ヘッドコーチ",
+    "quoteMain": "「子どもたちを、本当に強い選手に育てたい」",
+    "quoteSub": "——そのひと言が、すべての出発点です。",
+    "bio1": "ブラジル・サンパウロ出身のサッカー指導者。10代のころから<1>ヴァスコ・ダ・ガマ（ブラジル）</1>や<2>FC東京の前身「東京ガスFC」</2>でプレーした本格的なサッカーキャリアを持ち、引退後はその経験をまるごと\"指導\"へと注ぎ込んできました。",
+    "bio2": "2008年、沖縄に「<1>Brazilian Soccer Club</1>」を創設。以来17年以上にわたり、ブラジル式の育成メソッドを日本で実践し続けています。",
+    "achievementsTitle": "<1>実績が証明する、</1>育成力",
+    "achievementsText": "ロベルトコーチのもとで育った選手は<1>60名以上</1>。<2/>その多くが、より高いステージへと羽ばたいています。",
+    "achievements": {
+      "beachSoccer": {
+        "title": "🇯🇵 ビーチサッカー",
+        "description": "日本代表への選手輩出"
+      },
+      "overseasClub": {
+        "title": "🌏 海外プロクラブ",
+        "description": "海外プロクラブへの進出"
+      },
+      "overseasUniversity": {
+        "title": "🎓 海外大学",
+        "description": "サッカー奨学金での進学"
+      },
+      "topTeam": {
+        "title": "⚽ 強豪チーム",
+        "description": "国内外アカデミーへ昇格"
+      }
+    },
+    "philosophyQuote": "「<1>勝つだけのサッカー</1>」ではなく、<2>選手の人生を豊かにするサッカー</2>を教える<3/>——それがブラジリアンサッカークラブのスタイルです。",
+    "licensesTitle": "世界標準の<1>指導ライセンス</1>",
+    "licenses": {
+      "cbfB": { "year": "2021年", "title": "CBF（ブラジルサッカー連盟）B級ライセンス" },
+      "cbfAcademy": { "year": "2020年", "title": "CBFアカデミーコース修了" },
+      "fifaBeach": { "year": "2015年", "title": "FIFAビーチサッカー コーチングコース修了" },
+      "saoPauloCert": { "year": "2008年〜", "title": "サンパウロ州公認指導者（SITREFESP）" },
+      "cbfA": { "year": "2026年", "title": "CBF A級ライセンス取得予定" }
+    },
+    "licensesFooter": "ブラジル本国の連盟ライセンスを持ち、\n常に世界レベルの知識と技術をアップデートし続けています。",
+    "philosophyTitle": "指導理念",
+    "philosophyMotto": "\"Creating Players for Great Success\"",
+    "philosophyMottoTranslation": "——偉大な成功を掴む選手を育てる。",
+    "philosophyText": "<1>技術・戦術・メンタル・規律</1>。<2/>この4つを一体的に鍛える「ブラジル式メソッド」で、<3/>子どもたちを自信を持って世界で戦える人間へと育てます。",
+    "messageTitle": "ロベルトコーチからひと言",
+    "messageText": "「サッカーは、上手くなるだけのスポーツではありません。仲間を信頼すること、困難に立ち向かうこと、あきらめないこと——そういった力を、ピッチの上で本気になって学ぶ場所をつくりたいのです。ブラジルで私が学んだすべてを、ここ沖縄から、日本の子どもたちへ届けたいと思っています。」"
+  },
+  "programs": {
+    "sectionTitle": "プログラム紹介",
+    "sectionSubtitle": "年齢とレベルに合わせて選べるクラス",
+    "ageLabel": "対象：",
+    "frequencyLabel": "頻度：",
+    "featuresLabel": "特徴",
+    "recommendedBadge": "人気No.1",
+    "items": {
+      "elementary": {
+        "name": "Elementary",
+        "subtitle": "小学生クラス",
+        "description": "技術の基礎をしっかり学び、試合で活きるプレーを身につけます。",
+        "age": "小学1年生〜6年生",
+        "frequency": "週1回（¥6,500 - ¥7,000）/ 週2回（¥9,000 - ¥10,000）",
+        "price": "¥6,500 - ¥10,000",
+        "features": [
+          "ブラジル式基礎技術",
+          "戦術理解とポジショニング",
+          "試合形式のトレーニング",
+          "定期的なスキルチェック"
+        ]
+      },
+      "middle-high": {
+        "name": "Middle / High",
+        "subtitle": "中学生・高校生クラス",
+        "description": "より高いレベルを目指す選手のための実践的なトレーニングプログラム。",
+        "age": "中学生・高校生",
+        "frequency": "週1回（¥8,000 - ¥9,000）/ 週2回（¥10,000 - ¥12,000）",
+        "price": "¥8,000 - ¥12,000",
+        "features": [
+          "プロレベルの技術指導",
+          "戦術分析とゲーム理解",
+          "フィジカル強化プログラム",
+          "進路相談・サポート"
+        ]
+      }
+    },
+    "pricingTitle": "料金体系",
+    "initialFeesTitle": "初期費用（Initial Fees）",
+    "fees": {
+      "enrollment": "入会金（Enrollment Fee）",
+      "annual": "年会費（Annual Fee）",
+      "insurance": "保険（Insurance）",
+      "uniform": "ユニフォーム（Uniform Kit）"
+    },
+    "optionsTitle": "オプション・割引",
+    "siblingDiscountTitle": "🎉 兄弟割引",
+    "siblingDiscountItem1": "2人目：<1>10% OFF</1>",
+    "siblingDiscountItem2": "3人目：<1>20% OFF</1>",
+    "freeTrialTitle": "✨ 無料体験",
+    "freeTrialText": "初回体験レッスン<1>無料</1>",
+    "transferTitle": "🔄 振替制度",
+    "transferText": "荒天・行事時の振替可能",
+    "footnote": "※ 料金は税込表示です\n※ 詳しい料金プランについては、無料体験時にご説明いたします"
+  },
+  "testimonials": {
+    "sectionTitle": "実績・卒業生の声",
+    "sectionSubtitle": "60名以上の子どもたちが成長し、世界へ羽ばたいています",
+    "stats": {
+      "graduates": { "number": "60+", "label": "卒業生実績" },
+      "experience": { "number": "17年", "label": "指導実績" },
+      "national": { "number": "5名", "label": "日本代表・プロ輩出" },
+      "satisfaction": { "number": "98%", "label": "保護者満足度" }
+    },
+    "achievementsTitle": "🏆 主な輩出実績",
+    "achievements": {
+      "beachSoccer": {
+        "title": "ビーチサッカー日本代表",
+        "description": "複数名の選手が日本代表として国際大会で活躍"
+      },
+      "overseasClub": {
+        "title": "海外プロクラブへの進出",
+        "description": "ヨーロッパ・南米のプロクラブで活躍する選手を輩出"
+      },
+      "overseasUniversity": {
+        "title": "海外大学サッカー奨学金",
+        "description": "アメリカ・ヨーロッパの大学にサッカー奨学金で進学"
+      },
+      "topTeam": {
+        "title": "強豪アカデミー昇格",
+        "description": "国内外のハイレベルアカデミー・強豪チームへ"
+      }
+    },
+    "items": {
+      "1": {
+        "age": "小学6年生の保護者",
+        "text": "入会して1年、息子のプレーが見違えるように上達しました。ブラジル式の指導は楽しみながら技術が身につくので、毎週のレッスンを心待ちにしています。"
+      },
+      "2": {
+        "age": "中学2年生の保護者",
+        "text": "タイへの遠征などサッカーだけに留まらず、人として貴重な体験を得ています。将来は海外でプレーすることを夢見ています。ロベルトコーチの指導のおかげで、技術だけでなくメンタル面も成長しました。"
+      }
+    }
+  },
+  "faq": {
+    "sectionTitle": "よくある質問",
+    "sectionSubtitle": "お客様からよくいただくご質問にお答えします",
+    "items": {
+      "faq1": {
+        "question": "初心者でも参加できますか？",
+        "answer": "はい、もちろんです！Preschoolクラス、Elementaryクラスは初心者の方を対象としており、基礎から丁寧に指導します。サッカーが初めてのお子様でも安心してご参加いただけます。"
+      },
+      "faq2": {
+        "question": "体験レッスンは無料ですか？",
+        "answer": "初回の体験レッスンは完全無料です。実際のレッスンに参加していただき、ブラジル式の指導方法や雰囲気をご確認いただけます。体験レッスンは随時受け付けておりますので、お気軽にお申し込みください。"
+      },
+      "faq3": {
+        "question": "ブラジル式メソッドとは何ですか？",
+        "answer": "ブラジル式メソッドとは、技術・戦術・メンタル・規律の4つを一体的に鍛える指導法です。単なる技術習得だけでなく、サッカーを通じて人間として成長し、自信を持って世界で戦える選手を育てることを目的としています。"
+      },
+      "faq4": {
+        "question": "兄弟割引はありますか？",
+        "answer": "はい、兄弟割引制度がございます。2人目は10%割引、3人目は20%割引となります。ご家族で一緒にサッカーを楽しんでいただけるよう、お得な料金設定をご用意しています。"
+      },
+      "faq5": {
+        "question": "雨天時のレッスンはどうなりますか？",
+        "answer": "荒天時は安全を最優先し、レッスンを中止する場合がございます。その場合は振替制度がございますので、別の日程でレッスンを受講いただけます。振替可能日については、事前にご案内いたします。"
+      },
+      "faq6": {
+        "question": "入会時に必要なものは何ですか？",
+        "answer": "運動できる服装、サッカーシューズ（スパイクまたはトレーニングシューズ）、飲み物、タオルをご用意ください。ユニフォームキット（¥8,000）は入会時にご購入いただきます。サッカーボールはスクールで貸し出しも可能です。"
+      },
+      "faq7": {
+        "question": "月の途中からでも入会できますか？",
+        "answer": "はい、いつでもご入会いただけます。月の途中からの入会の場合は、料金を日割り計算させていただきますので、ご安心ください。"
+      },
+      "faq8": {
+        "question": "進路相談やサポートはありますか？",
+        "answer": "はい、特にMiddle/Highクラスでは、進路相談やサポートを行っています。海外プロクラブ、海外大学サッカー奨学金、国内強豪チームへの進路など、それぞれの目標に合わせたアドバイスを提供しています。"
+      },
+      "faq9": {
+        "question": "保護者の見学は可能ですか？",
+        "answer": "はい、保護者の方の見学は大歓迎です。お子様の成長を間近でご覧いただけます。また、定期的に保護者面談も実施しており、お子様の成長や課題について共有させていただいています。"
+      },
+      "faq10": {
+        "question": "どのような実績がありますか？",
+        "answer": "17年以上の指導実績があり、60名以上の卒業生を輩出しています。その中には、ビーチサッカー日本代表、海外プロクラブ所属選手、海外大学サッカー奨学金での進学者など、多くの選手が高いレベルで活躍しています。"
+      }
+    }
+  },
+  "applicationForm": {
+    "title": "無料体験申し込み",
+    "subtitle": "まずは無料体験レッスンで、\nブラジル式メソッドを体感してください",
+    "freeTrialBadge": "✨ 初回体験レッスン完全無料！",
+    "submittedTitle": "お申し込み完了！",
+    "submittedText": "担当者から2営業日以内にご連絡いたします",
+    "labels": {
+      "parentName": "保護者氏名",
+      "childName": "お子様氏名",
+      "childAge": "お子様の年齢・学年",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "program": "希望クラス",
+      "message": "ご質問・ご要望"
+    },
+    "placeholders": {
+      "parentName": "山田 太郎",
+      "childName": "山田 花子",
+      "childAge": "例：5歳 / 小学3年生 / 中学1年生",
+      "message": "ご質問やご要望があればご記入ください"
+    },
+    "options": {
+      "placeholder": "選択してください",
+      "preschool": "Preschool（未就学児クラス）",
+      "elementary": "Elementary（小学生クラス）",
+      "middleHigh": "Middle/High（中学生・高校生クラス）"
+    },
+    "feeInfoTitle": "💰 初期費用について",
+    "fees": {
+      "enrollment": "入会金：¥6,000",
+      "annual": "年会費：¥5,500",
+      "insurance": "保険：¥1,500",
+      "uniform": "ユニフォーム：¥8,000",
+      "siblingDiscount": "🎉 兄弟割引：2人目-10% / 3人目-20%"
+    },
+    "footnote": "※ 担当者から2営業日以内にご連絡いたします\n※ お客様の個人情報は適切に管理し、第三者に開示することはありません",
+    "toast": {
+      "required": "必須項目を全て入力してください",
+      "success": "お申し込みありがとうございます！担当者から2営業日以内にご連絡いたします。",
+      "error": "送信に失敗しました。時間をおいて再度お試しください"
+    }
+  },
+  "footer": {
+    "subtitle": "アスレタアカデミー沖縄",
+    "aboutText": "ブラジルが生んだ「本物のサッカー」を、沖縄から日本へ。\n世界標準のブラジル式メソッドで、子どもたちの可能性を最大限に引き出します。",
+    "quickLinksTitle": "クイックリンク",
+    "links": {
+      "about": "スクールについて",
+      "programs": "プログラム",
+      "applicationForm": "無料体験申し込み",
+      "coach": "コーチ紹介",
+      "access": "アクセス"
+    },
+    "contactTitle": "お問い合わせ",
+    "snsText": "SNSでも情報発信中",
+    "stats": {
+      "experienceNumber": "17年+",
+      "experienceLabel": "指導実績",
+      "graduatesNumber": "60名+",
+      "graduatesLabel": "卒業生",
+      "nationalNumber": "5名",
+      "nationalLabel": "日本代表・プロ輩出",
+      "satisfactionNumber": "98%",
+      "satisfactionLabel": "保護者満足度"
+    },
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "founderLine": "創設者：岩下ロベルト（Roberto Iwashita） | 沖縄県那覇市"
+  }
+}
