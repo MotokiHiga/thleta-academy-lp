@@ -22,7 +22,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-<!-- 言語切替ボタン（サイトデザインに合わせたカスタムUI） -->
+<!-- 前回の言語選択クッキーをリセットし、常に日本語から開始させる -->
+    <script type="text/javascript">
+      function clearGoogTransCookie() {
+        var domain = window.location.hostname;
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + domain;
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + domain;
+      }
+      clearGoogTransCookie();
+    </script>
+
+    <!-- 言語切替ボタン（サイトデザインに合わせたカスタムUI） -->
     <div style="position: fixed; top: 16px; right: 16px; z-index: 9999; display: flex; gap: 6px;">
       <button onclick="changeLanguage('ja')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.45); color: #F5C800; font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px);">JP</button>
       <button onclick="changeLanguage('en')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.45); color: #ffffff; font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px);">EN</button>
@@ -38,15 +49,22 @@
         );
       }
       function changeLanguage(lang) {
+        if (lang === 'ja') {
+          // 日本語へ戻す場合は、クッキーを削除してページを再読み込みするのが確実
+          clearGoogTransCookie();
+          window.location.reload();
+          return;
+        }
         var select = document.querySelector('#google_translate_element select.goog-te-combo');
         if (!select) {
-          // ウィジェットの読み込みが完了していない場合、少し待って再試行
           setTimeout(function () { changeLanguage(lang); }, 300);
           return;
         }
-        select.value = (lang === 'ja') ? '' : lang;
+        select.value = lang;
         select.dispatchEvent(new Event('change'));
       }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
