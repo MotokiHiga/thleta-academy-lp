@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta charset="UTF-8" />
@@ -10,7 +10,6 @@
     <meta property="og:description" content="沖縄のサッカースクール、アスレタアカデミー沖縄。無料体験受付中。" />
     <meta property="og:url" content="https://www.athleta-academy-okinawa.com/" />
     <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7N7SHC55S"></script>
     <script>
@@ -23,5 +22,24 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Google翻訳ウィジェット（右上に固定表示） -->
+    <div id="google_translate_element" style="position: fixed; top: 12px; right: 12px; z-index: 9999; background: #ffffff; padding: 4px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- 翻訳時にページ上部へ出る青いバナーによるレイアウトずれを防止 -->
+    <style>
+      body { top: 0px !important; }
+      .goog-te-banner-frame.skiptranslate { display: none !important; }
+      .goog-te-gadget-icon { display: none !important; }
+    </style>
   </body>
 </html>
