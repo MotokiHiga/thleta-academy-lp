@@ -22,21 +22,51 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-<!-- 前回の言語選択クッキーをリセットし、常に日本語から開始させる -->
+
+    <!-- Google翻訳のCookie操作用ユーティリティ（複数ドメインパターンに対応） -->
     <script type="text/javascript">
-      function clearGoogTransCookie() {
-        var domain = window.location.hostname;
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + domain;
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + domain;
+      function getDomainVariants() {
+        var hostname = window.location.hostname;
+        var parts = hostname.split('.');
+        var domains = [hostname];
+        for (var i = 1; i < parts.length - 1; i++) {
+          domains.push(parts.slice(i).join('.'));
+        }
+        return domains;
       }
-      clearGoogTransCookie();
+      function clearGoogTransCookie() {
+        getDomainVariants().forEach(function (d) {
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + d + ';';
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + d + ';';
+        });
+      }
+      function forceGoogTransCookie(value) {
+        getDomainVariants().forEach(function (d) {
+          document.cookie = 'googtrans=' + value + '; path=/; domain=' + d + ';';
+          document.cookie = 'googtrans=' + value + '; path=/; domain=.' + d + ';';
+        });
+        document.cookie = 'googtrans=' + value + '; path=/;';
+      }
+      function getCurrentLang() {
+        var match = document.cookie.match(/googtrans=\/[a-z]{2}\/([a-z]{2})/);
+        return match ? match[1] : 'ja';
+      }
+      function updateActiveButtonUI(lang) {
+        var jaBtn = document.getElementById('langBtnJa');
+        var enBtn = document.getElementById('langBtnEn');
+        if (!jaBtn || !enBtn) return;
+        var activeStyle = 'background: rgba(245,200,0,0.9); color: #1a1a1a;';
+        var inactiveStyle = 'background: rgba(0,0,0,0.45); color: rgba(255,255,255,0.6);';
+        jaBtn.style.cssText += (lang === 'ja') ? activeStyle : inactiveStyle;
+        enBtn.style.cssText += (lang === 'en') ? activeStyle : inactiveStyle;
+      }
     </script>
 
-    <!-- 言語切替ボタン（サイトデザインに合わせたカスタムUI） -->
+    <!-- 言語切替ボタン（サイトデザインに合わせたカスタムUI／選択中を強調表示） -->
     <div style="position: fixed; top: 16px; right: 16px; z-index: 9999; display: flex; gap: 6px;">
-      <button onclick="changeLanguage('ja')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.45); color: #F5C800; font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px);">JP</button>
-      <button onclick="changeLanguage('en')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.45); color: #ffffff; font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px);">EN</button>
+      <button id="langBtnJa" onclick="changeLanguage('ja')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px); transition: all 0.2s;">JP</button>
+      <button id="langBtnEn" onclick="changeLanguage('en')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.4); font-weight: bold; font-size: 13px; cursor: pointer; backdrop-filter: blur(4px); transition: all 0.2s;">EN</button>
     </div>
 
     <!-- Google翻訳の実体（画面外に配置し、機能のみ利用） -->
@@ -50,8 +80,8 @@
       }
       function changeLanguage(lang) {
         if (lang === 'ja') {
-          // 日本語へ戻す場合は、クッキーを削除してページを再読み込みするのが確実
           clearGoogTransCookie();
+          forceGoogTransCookie('/ja/ja');
           window.location.reload();
           return;
         }
@@ -63,8 +93,7 @@
         select.value = lang;
         select.dispatchEvent(new Event('change'));
       }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      updateActiveButtonUI(getCurrentLang());
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
