@@ -37,6 +37,15 @@ export function ApplicationForm() {
 
       if (response.ok) {
         setSubmitted(true);
+
+        // Google Analytics 4 コンバージョンイベント送信
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'generate_lead', {
+            event_category: 'engagement',
+            event_label: formData.program,
+          });
+        }
+
         toast.success('お申し込みありがとうございます！担当者から2営業日以内にご連絡いたします。');
 
         // Reset form after 3 seconds
