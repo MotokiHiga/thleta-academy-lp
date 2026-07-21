@@ -1,4 +1,4 @@
-import { GraduationCap, Target, Check } from 'lucide-react';
+import { Target, Check } from 'lucide-react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import { withLineBreaks } from '../lib/withLineBreaks';
@@ -17,12 +17,6 @@ export function Programs() {
   const { t } = useTranslation();
 
   const programs = [
-    {
-      id: 'elementary',
-      icon: GraduationCap,
-      color: 'green',
-      recommended: true,
-    },
     {
       id: 'middle-high',
       icon: Target,
@@ -70,7 +64,7 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="flex justify-center max-w-md mx-auto mb-16">
           {programs.map((program) => {
             const Icon = program.icon;
             const colors = colorClasses[program.color as keyof typeof colorClasses];
@@ -154,12 +148,8 @@ export function Programs() {
                   <span className="font-bold text-[#002776]">¥5,500</span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-white rounded-lg border">
-                  <span className="text-gray-700">{t('programs.fees.insurance')}</span>
-                  <span className="font-bold text-[#002776]">¥1,500</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg border">
                   <span className="text-gray-700">{t('programs.fees.uniform')}</span>
-                  <span className="font-bold text-[#002776]">¥8,000</span>
+                  <span className="font-bold text-[#002776]">¥16,000</span>
                 </div>
               </div>
             </div>

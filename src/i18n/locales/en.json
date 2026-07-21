@@ -88,32 +88,19 @@
     "featuresLabel": "Features",
     "recommendedBadge": "Most Popular",
     "items": {
-      "elementary": {
-        "name": "Elementary",
-        "subtitle": "Elementary School Class",
-        "description": "Build a solid technical foundation and develop play that comes through in real matches.",
-        "age": "Grades 1–6 (Elementary School)",
-        "frequency": "1x/week (¥6,500 - ¥7,000) / 2x/week (¥9,000 - ¥10,000)",
-        "price": "¥6,500 - ¥10,000",
-        "features": [
-          "Brazilian-style fundamental technique",
-          "Tactical understanding and positioning",
-          "Match-style training",
-          "Regular skill assessments"
-        ]
-      },
       "middle-high": {
         "name": "Middle / High",
         "subtitle": "Junior High & High School Class",
         "description": "A hands-on training program for players aiming for the next level.",
         "age": "Junior High & High School Students",
-        "frequency": "1x/week (¥8,000 - ¥9,000) / 2x/week (¥10,000 - ¥12,000)",
-        "price": "¥8,000 - ¥12,000",
+        "frequency": "3x/week (Mon, Wed, Fri)",
+        "price": "¥12,000/month",
         "features": [
           "Pro-level technical coaching",
           "Tactical analysis and game understanding",
           "Physical conditioning program",
-          "Career path consultation & support"
+          "Career path consultation & support",
+          "For 1x or 2x/week only, please contact us directly to discuss availability and pricing"
         ]
       }
     },
@@ -122,7 +109,6 @@
     "fees": {
       "enrollment": "Enrollment Fee",
       "annual": "Annual Fee",
-      "insurance": "Insurance",
       "uniform": "Uniform Kit"
     },
     "optionsTitle": "Options & Discounts",
@@ -180,7 +166,7 @@
     "items": {
       "faq1": {
         "question": "Can beginners join?",
-        "answer": "Absolutely! Our Preschool and Elementary classes are designed for beginners, with careful coaching that starts from the basics. Children who are completely new to soccer are welcome to join with confidence."
+        "answer": "Absolutely! Our Preschool class is designed for beginners, with careful coaching that starts from the basics. Children who are completely new to soccer are welcome to join with confidence."
       },
       "faq2": {
         "question": "Is the trial lesson free?",
@@ -200,7 +186,7 @@
       },
       "faq6": {
         "question": "What do we need to bring when joining?",
-        "answer": "Please bring clothes you can move in, soccer shoes (cleats or training shoes), a drink, and a towel. A uniform kit (¥8,000) is purchased at the time of enrollment. Soccer balls can also be borrowed from the school."
+        "answer": "Please bring clothes you can move in, soccer shoes (cleats or training shoes), a drink, and a towel. A uniform kit (¥16,000, including a training shirt, pants, and socks) is purchased at the time of enrollment. Soccer balls can also be borrowed from the school."
       },
       "faq7": {
         "question": "Can we join partway through the month?",
@@ -244,15 +230,13 @@
     "options": {
       "placeholder": "Please select",
       "preschool": "Preschool (Pre-Elementary Class)",
-      "elementary": "Elementary (Elementary School Class)",
       "middleHigh": "Middle/High (Junior High & High School Class)"
     },
     "feeInfoTitle": "💰 About Initial Fees",
     "fees": {
       "enrollment": "Enrollment Fee: ¥6,000",
       "annual": "Annual Fee: ¥5,500",
-      "insurance": "Insurance: ¥1,500",
-      "uniform": "Uniform: ¥8,000",
+      "uniform": "Uniform: ¥16,000 (training shirt, pants, socks)",
       "siblingDiscount": "🎉 Sibling Discount: 2nd child -10% / 3rd child -20%"
     },
     "footnote": "* A staff member will contact you within 2 business days\n* Your personal information is handled responsibly and will never be shared with third parties",

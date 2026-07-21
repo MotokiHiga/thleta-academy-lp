@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import { withLineBreaks } from '../lib/withLineBreaks';
 import heroImage from '../../assets/hero-top.png';
+import logo from '../../assets/athleta-logo.png';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -30,10 +31,11 @@ export function Hero() {
           <div className="mb-6 inline-block">
             <span className="text-[#FEDD00] text-xl md:text-2xl font-semibold">{t('common.brazilBadge')}</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            <span className="text-[#FEDD00]">ATHLETA ACADEMY</span><br />
-            <span className="text-white">OKINAWA JAPAN</span>
-          </h1>
+          <img
+            src={logo}
+            alt="Athleta Academy Okinawa Japan"
+            className="mx-auto w-64 md:w-96 mb-6 animate-fade-in"
+          />
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             {withLineBreaks(t('hero.subtitle'), 'hidden md:block')}
           </p>
