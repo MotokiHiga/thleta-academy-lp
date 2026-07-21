@@ -204,7 +204,6 @@ export function ApplicationForm() {
                   >
                     <option value="">{t('applicationForm.options.placeholder')}</option>
                     <option value="preschool">{t('applicationForm.options.preschool')}</option>
-                    <option value="elementary">{t('applicationForm.options.elementary')}</option>
                     <option value="middle-high">{t('applicationForm.options.middleHigh')}</option>
                   </select>
                 </div>
@@ -237,7 +236,6 @@ export function ApplicationForm() {
                   <ul className="text-sm text-gray-700 space-y-2">
                     <li>• {t('applicationForm.fees.enrollment')}</li>
                     <li>• {t('applicationForm.fees.annual')}</li>
-                    <li>• {t('applicationForm.fees.insurance')}</li>
                     <li>• {t('applicationForm.fees.uniform')}</li>
                     <li className="pt-2 font-semibold text-[#009739]">{t('applicationForm.fees.siblingDiscount')}</li>
                   </ul>
