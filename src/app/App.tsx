@@ -6,21 +6,25 @@ import { Programs } from './components/Programs';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { ApplicationForm } from './components/ApplicationForm';
+import { SummerClinicCallout } from './components/SummerClinicCallout';
 import { Footer } from './components/Footer';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
 import SummerCampPopup from './components/SummerCampPopup';
+import { SummerClinicBanner } from './components/SummerClinicBanner';
 
 export default function App() {
   return (
     <div className="min-h-screen">
     <LanguageSwitcher />
     <SummerCampPopup />
+      <SummerClinicBanner />
       <Hero />
       <About />
       <CoachProfile />
       <Programs />
       <Testimonials />
       <FAQ />
+      <SummerClinicCallout />
       <ApplicationForm />
       <Footer />
       <Toaster position="top-center" />

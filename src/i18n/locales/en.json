@@ -66,11 +66,26 @@
     "philosophyQuote": "Not just <1>soccer to win</1>, but <2>soccer that enriches a player's life</2> — that's what we teach.<3/>That's the Brazilian Soccer Club style.",
     "licensesTitle": "World-Class <1>Coaching Licenses</1>",
     "licenses": {
-      "cbfB": { "year": "2021", "title": "CBF (Brazilian Football Confederation) Class B License" },
-      "cbfAcademy": { "year": "2020", "title": "Completed CBF Academy Course" },
-      "fifaBeach": { "year": "2015", "title": "Completed FIFA Beach Soccer Coaching Course" },
-      "saoPauloCert": { "year": "Since 2008", "title": "Certified Coach, State of São Paulo (SITREFESP)" },
-      "cbfA": { "year": "2026", "title": "CBF Class A License (Expected)" }
+      "cbfB": {
+        "year": "2021",
+        "title": "CBF (Brazilian Football Confederation) Class B License"
+      },
+      "cbfAcademy": {
+        "year": "2020",
+        "title": "Completed CBF Academy Course"
+      },
+      "fifaBeach": {
+        "year": "2015",
+        "title": "Completed FIFA Beach Soccer Coaching Course"
+      },
+      "saoPauloCert": {
+        "year": "Since 2008",
+        "title": "Certified Coach, State of São Paulo (SITREFESP)"
+      },
+      "cbfA": {
+        "year": "2026",
+        "title": "CBF Class A License (Expected)"
+      }
     },
     "licensesFooter": "Holding official federation licenses from Brazil, he continually\nupdates his knowledge and skills to a world-class standard.",
     "philosophyTitle": "Coaching Philosophy",
@@ -125,10 +140,22 @@
     "sectionTitle": "Results & Voices of Our Graduates",
     "sectionSubtitle": "Over 60 children have grown here and gone on to spread their wings around the world",
     "stats": {
-      "graduates": { "number": "60+", "label": "Graduates" },
-      "experience": { "number": "17 Years", "label": "Coaching Experience" },
-      "national": { "number": "5", "label": "National Team & Pro Players Produced" },
-      "satisfaction": { "number": "98%", "label": "Parent Satisfaction" }
+      "graduates": {
+        "number": "60+",
+        "label": "Graduates"
+      },
+      "experience": {
+        "number": "17 Years",
+        "label": "Coaching Experience"
+      },
+      "national": {
+        "number": "5",
+        "label": "National Team & Pro Players Produced"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "label": "Parent Satisfaction"
+      }
     },
     "achievementsTitle": "🏆 Notable Achievements",
     "achievements": {
@@ -255,7 +282,8 @@
       "programs": "Programs",
       "applicationForm": "Free Trial Application",
       "coach": "Meet the Coach",
-      "access": "Access"
+      "access": "Access",
+      "summerClinic": "Summer Clinic 2026"
     },
     "contactTitle": "Contact Us",
     "snsText": "Follow us on social media",
@@ -272,5 +300,17 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "founderLine": "Founder: Roberto Iwashita (岩下ロベルト) | Naha, Okinawa, Japan"
+  },
+  "summerClinic": {
+    "closeAria": "Close",
+    "popupImageAlt": "Summer Clinic 2026 announcement",
+    "applyButton": "Apply for the Summer Clinic",
+    "externalFormNote": "* Opens the Google Form in a new tab",
+    "bannerText": "⚽ Summer Clinic 2026 – Now Accepting Applications! (Aug 15 & 29, Ages 12-18)",
+    "bannerButton": "Details & Apply",
+    "calloutBadge": "🇧🇷 SUMMER CLINIC 2026",
+    "calloutTitle": "Summer Clinic 2026 – Now Accepting Applications!",
+    "calloutText": "A two-day intensive clinic for players ages 12-18.\nAug 15 (Sat) Kadena Athletic Field / Aug 29 (Sat) Chatan Sub Ground\nFee: ¥8,000 (tax included)",
+    "calloutButton": "Apply for the Summer Clinic"
   }
 }

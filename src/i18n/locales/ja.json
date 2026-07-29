@@ -66,11 +66,26 @@
     "philosophyQuote": "「<1>勝つだけのサッカー</1>」ではなく、<2>選手の人生を豊かにするサッカー</2>を教える<3/>——それがブラジリアンサッカークラブのスタイルです。",
     "licensesTitle": "世界標準の<1>指導ライセンス</1>",
     "licenses": {
-      "cbfB": { "year": "2021年", "title": "CBF（ブラジルサッカー連盟）B級ライセンス" },
-      "cbfAcademy": { "year": "2020年", "title": "CBFアカデミーコース修了" },
-      "fifaBeach": { "year": "2015年", "title": "FIFAビーチサッカー コーチングコース修了" },
-      "saoPauloCert": { "year": "2008年〜", "title": "サンパウロ州公認指導者（SITREFESP）" },
-      "cbfA": { "year": "2026年", "title": "CBF A級ライセンス取得予定" }
+      "cbfB": {
+        "year": "2021年",
+        "title": "CBF（ブラジルサッカー連盟）B級ライセンス"
+      },
+      "cbfAcademy": {
+        "year": "2020年",
+        "title": "CBFアカデミーコース修了"
+      },
+      "fifaBeach": {
+        "year": "2015年",
+        "title": "FIFAビーチサッカー コーチングコース修了"
+      },
+      "saoPauloCert": {
+        "year": "2008年〜",
+        "title": "サンパウロ州公認指導者（SITREFESP）"
+      },
+      "cbfA": {
+        "year": "2026年",
+        "title": "CBF A級ライセンス取得予定"
+      }
     },
     "licensesFooter": "ブラジル本国の連盟ライセンスを持ち、\n常に世界レベルの知識と技術をアップデートし続けています。",
     "philosophyTitle": "指導理念",
@@ -125,10 +140,22 @@
     "sectionTitle": "実績・卒業生の声",
     "sectionSubtitle": "60名以上の子どもたちが成長し、世界へ羽ばたいています",
     "stats": {
-      "graduates": { "number": "60+", "label": "卒業生実績" },
-      "experience": { "number": "17年", "label": "指導実績" },
-      "national": { "number": "5名", "label": "日本代表・プロ輩出" },
-      "satisfaction": { "number": "98%", "label": "保護者満足度" }
+      "graduates": {
+        "number": "60+",
+        "label": "卒業生実績"
+      },
+      "experience": {
+        "number": "17年",
+        "label": "指導実績"
+      },
+      "national": {
+        "number": "5名",
+        "label": "日本代表・プロ輩出"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "label": "保護者満足度"
+      }
     },
     "achievementsTitle": "🏆 主な輩出実績",
     "achievements": {
@@ -255,7 +282,8 @@
       "programs": "プログラム",
       "applicationForm": "無料体験申し込み",
       "coach": "コーチ紹介",
-      "access": "アクセス"
+      "access": "アクセス",
+      "summerClinic": "サマークリニック2026"
     },
     "contactTitle": "お問い合わせ",
     "snsText": "SNSでも情報発信中",
@@ -272,5 +300,17 @@
     "privacyPolicy": "プライバシーポリシー",
     "termsOfService": "利用規約",
     "founderLine": "創設者：岩下ロベルト（Roberto Iwashita） | 沖縄県那覇市"
+  },
+  "summerClinic": {
+    "closeAria": "閉じる",
+    "popupImageAlt": "サマークリニック2026のお知らせ",
+    "applyButton": "サマークリニックに申し込む",
+    "externalFormNote": "※ Googleフォームが新しいタブで開きます",
+    "bannerText": "⚽ サマークリニック2026 参加者募集中！（8/15・8/29開催、対象：12〜18歳）",
+    "bannerButton": "詳細・申し込み",
+    "calloutBadge": "🇧🇷 SUMMER CLINIC 2026",
+    "calloutTitle": "サマークリニック2026 参加者募集中！",
+    "calloutText": "12〜18歳対象の2日間集中クリニックを開催します。\n8/15（土）嘉手納町陸上競技場・8/29（土）北谷公園陸上競技場サブグラウンド\n参加費：8,000円（税込）",
+    "calloutButton": "サマークリニックに申し込む"
   }
 }

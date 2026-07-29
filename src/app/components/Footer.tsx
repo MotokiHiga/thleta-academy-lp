@@ -1,6 +1,7 @@
 import { Mail, Facebook, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { withLineBreaks } from '../lib/withLineBreaks';
+import { SUMMER_CLINIC_FORM_URL } from '../lib/links';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -60,6 +61,16 @@ export function Footer() {
               <li>
                 <a href="#application-form" className="text-gray-300 hover:text-[#FEDD00] transition-colors">
                   {t('footer.links.applicationForm')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SUMMER_CLINIC_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-[#FEDD00] transition-colors"
+                >
+                  {t('footer.links.summerClinic')}
                 </a>
               </li>
               <li>
