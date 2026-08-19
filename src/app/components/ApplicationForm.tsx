@@ -203,7 +203,6 @@ export function ApplicationForm() {
                     className="w-full h-12 px-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#009739] focus:border-[#009739]"
                   >
                     <option value="">{t('applicationForm.options.placeholder')}</option>
-                    <option value="preschool">{t('applicationForm.options.preschool')}</option>
                     <option value="middle-high">{t('applicationForm.options.middleHigh')}</option>
                   </select>
                 </div>
