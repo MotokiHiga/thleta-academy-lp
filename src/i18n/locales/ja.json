@@ -251,7 +251,7 @@
     "placeholders": {
       "parentName": "山田 太郎",
       "childName": "山田 花子",
-      "childAge": "例：5歳 / 小学3年生 / 中学1年生",
+      "childAge": "例：中学1年 / 高校1年",
       "message": "ご質問やご要望があればご記入ください"
     },
     "options": {
