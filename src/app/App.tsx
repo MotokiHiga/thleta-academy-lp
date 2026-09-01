@@ -9,14 +9,12 @@ import { ApplicationForm } from './components/ApplicationForm';
 import { SummerClinicCallout } from './components/SummerClinicCallout';
 import { Footer } from './components/Footer';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
-import SummerCampPopup from './components/SummerCampPopup';
 import { SummerClinicBanner } from './components/SummerClinicBanner';
 
 export default function App() {
   return (
     <div className="min-h-screen">
     <LanguageSwitcher />
-    <SummerCampPopup />
       <SummerClinicBanner />
       <Hero />
       <About />
